@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
+// Components
 import { BasicsComponent } from './sales/pages/basics/basics.component';
 import { NotCommonsComponent } from './sales/pages/not-commons/not-commons.component';
 import { NumbersComponent } from './sales/pages/numbers/numbers.component';

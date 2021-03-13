@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+// Components
 import { NumbersComponent } from './pages/numbers/numbers.component';
 import { NotCommonsComponent } from './pages/not-commons/not-commons.component';
 import { BasicsComponent } from './pages/basics/basics.component';
