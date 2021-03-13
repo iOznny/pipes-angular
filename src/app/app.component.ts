@@ -9,5 +9,6 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'pipes-app';
 
-  public name: string = 'Testing awdDAWD';
+  public name: string = 'Testing DeMo';
+
 }
