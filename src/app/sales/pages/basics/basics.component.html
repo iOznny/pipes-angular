@@ -5,16 +5,67 @@
 
 <div class="p-grid">
     <div class="p-col-4">
-        <p-card header="uppercase">
-            1
+        <p-card header="uppercase" [subheader]="nameUpper | uppercase">
+            {{ nameUpper | uppercase }}
         </p-card>
     </div>
 
     <div class="p-col-4">
-        1
+        <p-card header="lowercase" [subheader]="nameLower | lowercase">
+            {{ nameLower | lowercase }}
+        </p-card>
     </div>
 
     <div class="p-col-4">
-        1
+        <p-card header="titlecase" [subheader]="nameComplete | titlecase">
+            {{ nameComplete | titlecase }}
+        </p-card>
+    </div>
+</div>
+
+<div class="text-layout">
+    <h1>Date | Fecha | Pipe</h1>
+    <p>Pipe para mostrar las fechas.</p>
+</div>
+
+<div class="p-grid">
+    <div class="p-col-6">
+        <p-card>
+            <ul>
+                <li>date</li>
+                <li>date | date</li>
+                <li>date | date:'short'</li>
+                <li>date | date:'medium'</li>
+                <li>date | date:'long'</li>
+                <li>date | date:'full'</li>
+                <li>date | date:'shortDate'</li>
+                <li>date | date:'mediumDate'</li>
+                <li>date | date:'longDate'</li>
+                <li>date | date:'fullDate'</li>
+                <li>date | date:'MM'</li>
+                <li>date | date:'MMMM'</li>
+                <li>date | date:'MMMM dd, yyyy'</li>
+            </ul>
+        </p-card>
+    </div>
+
+    <div class="p-col-6">
+        <p-card>
+            <ul>
+                <li>{{ date }}</li>
+                <li>{{ date | date }}</li>
+                <li>{{ date | date:'short' }}</li>
+                <li>{{ date | date:'medium' }}</li>
+                <li>{{ date | date:'long' }}</li>
+                <li>{{ date | date:'full' }}</li>
+                <li>{{ date | date:'shortDate' }}</li>
+                <li>{{ date | date:'mediumDate' }}</li>
+                <li>{{ date | date:'longDate' }}</li>                
+                <li>{{ date | date:'fullDate' }}</li>    
+                <li>{{ date | date:'MM' }}</li>
+                <li>{{ date | date:'MMMM' }}</li>
+                <li>{{ date | date:'MMMM dd, yyyy' }}</li>
+            </ul>
+        </p-card>
     </div>
 </div>
