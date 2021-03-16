@@ -6,3 +6,7 @@ html, body {
     color: var(--text-color);
     font-family: var(--font-family);
 }
+
+.text-layout {
+    color: var(--text-color);
+}
