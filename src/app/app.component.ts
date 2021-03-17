@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { PrimeNGConfig } from 'primeng/api';
 
 @Component({
   selector: 'app-root',
@@ -6,9 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 
-export class AppComponent {
-  title = 'pipes-app';
+export class AppComponent implements OnInit {
+ 
+  constructor(private primengConfig: PrimeNGConfig) { }
 
-  public name: string = 'Testing DeMo';
+  ngOnInit(): void {
+    this.primengConfig.ripple = true;
+  }
 
 }

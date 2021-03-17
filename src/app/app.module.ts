@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { LOCALE_ID, NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Modules
 import { AppRouterModule } from './app-router.module';
@@ -24,7 +25,8 @@ registerLocaleData(localFr);
     BrowserModule,
     SharedModule,
     AppRouterModule,
-    SalesModule
+    SalesModule,
+    BrowserAnimationsModule
   ],
   providers: [
     { provide: LOCALE_ID, useValue: 'es-MX' }
