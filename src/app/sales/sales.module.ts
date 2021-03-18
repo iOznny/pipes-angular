@@ -10,12 +10,16 @@ import { NotCommonsComponent } from './pages/not-commons/not-commons.component';
 import { BasicsComponent } from './pages/basics/basics.component';
 import { OrderComponent } from './pages/order/order.component';
 
+// Pipes
+import { MayusculasPipe } from './pipes/mayusculas.pipe';
+
 @NgModule({
   declarations: [
     NumbersComponent, 
     NotCommonsComponent, 
     BasicsComponent, 
-    OrderComponent
+    OrderComponent,
+    MayusculasPipe
   ],
   imports: [
     CommonModule,
