@@ -12,6 +12,8 @@ import { OrderComponent } from './pages/order/order.component';
 
 // Pipes
 import { MayusculasPipe } from './pipes/mayusculas.pipe';
+import { FlyPipe } from './pipes/fly.pipe';
+import { OrderPipe } from './pipes/order.pipe';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { MayusculasPipe } from './pipes/mayusculas.pipe';
     NotCommonsComponent, 
     BasicsComponent, 
     OrderComponent,
-    MayusculasPipe
+    MayusculasPipe,
+    FlyPipe,
+    OrderPipe
   ],
   imports: [
     CommonModule,
